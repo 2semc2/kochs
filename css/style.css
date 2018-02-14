@@ -1,0 +1,80 @@
+/* GLOBAL RULES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    -moz-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    font-family: "Helvetica";
+}
+
+body, html {
+    height: 100%;
+}
+
+
+/* RULES FOR PARALLAX */
+.parallax-container {
+    height: 720px;
+}
+
+/* RULES FOR VIDEO */
+video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    z-index: -99;
+}
+
+/* RULES FOR WEBDOCTITLE */
+.webdoctitle {
+    right: 15%;
+    top: 15%;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.webdoctitle h1 {
+    font-size: 52px;
+    margin: auto;
+}
+
+/* RULES FOR WEBDOCTITLE -> DIVIDER */
+.divider {
+    width: 65px;
+    height: 2px;
+    background: #333;
+    margin: 20px auto;
+}
+
+/* RULES FOR CONTENT */
+.content {
+    background: #2e3436;
+}
+
+/* RULES FOR CONTENT DIVS */
+.content div {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2%
+}
