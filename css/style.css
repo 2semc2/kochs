@@ -4,34 +4,15 @@
     padding: 0;
 }
 
-html {
-    overflow: hidden;
-}
-
-body {
-    overflow: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 1px;
-    -moz-perspective: 1px;
-    perspective: 1px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    font-family: "Helvetica";
-}
-
-body, html {
-    height: 100%;
-}
-
 /* RULES FOR PROGRESS INDICATOR */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     width: 100%;
     background-color: #f1f1f1;
+    z-index: 10;
 }
 
 .progress-container {
@@ -47,21 +28,13 @@ header {
 }
 
 .parallax-container {
-    height: 720px;
+    height: 520px;
 }
-
+/*
 /* RULES FOR VIDEO */
 video {
     position: absolute;
-    min-width: 101%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
-    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
-    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    width: 100%;
     z-index: -99;
 }
 
@@ -80,7 +53,8 @@ video {
 }
 
 .webdoctitle img {
-    width: 75%
+    width: 75%;
+    opacity: 0.5;
 }
 
 /* RULES FOR WEBDOCTITLE -> DIVIDER */
@@ -101,4 +75,23 @@ video {
     max-width: 700px;
     margin: 0 auto;
     padding: 2%
+}
+
+/* RULES FOR FADE IN TEXT EFFECT */
+p {
+	position: relative;
+	margin: 2% 5% 1% 5%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 1em;
+	opacity: 0;
+}
+
+p.fading {
+	animation: fadein 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	0% { opacity:0 ;}
+	100% { opacity:1 ;}
 }
