@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    font-family: "Lato", "Helvetica", sans-serif;
+}
+
 /* RULES FOR PROGRESS INDICATOR */
 header {
     position: fixed;
@@ -23,7 +27,7 @@ header {
 
 .progress-bar {
   height: 8px;
-  background: #4caf50;
+  background: #078598;
   width: 0%;
 }
 
@@ -40,21 +44,19 @@ video {
 
 /* RULES FOR WEBDOCTITLE */
 .webdoctitle {
-    right: 15%;
-    top: 5%;
+    right: 65%;
+    top: 35%;
     text-align: center;
     position: absolute;
     z-index: 2;
+    background: #FFF;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .webdoctitle h1 {
     font-size: 34px;
     margin: auto;
-}
-
-.webdoctitle img {
-    width: 75%;
-    opacity: 0.5;
 }
 
 /* RULES FOR WEBDOCTITLE -> DIVIDER */
@@ -68,6 +70,7 @@ video {
 /* RULES FOR CONTENT */
 .content {
     background: #2e3436;
+    text-align: center;
 }
 
 /* RULES FOR CONTENT DIVS */
@@ -75,6 +78,16 @@ video {
     max-width: 700px;
     margin: 0 auto;
     padding: 2%
+}
+
+/* RULES FOR PICTURE ROW */
+.gridPic {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.gridPic img {
+    width: 100%;
 }
 
 /* RULES FOR FADE IN TEXT EFFECT */
