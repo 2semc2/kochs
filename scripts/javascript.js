@@ -10,7 +10,7 @@ function myFunction() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// RULES FOR TEXT FADE IN
+// RULES FOR TEXT FADE IN FOR P TAGS
 window.addEventListener("load",
     function () {
         window.addEventListener("scroll",
@@ -26,3 +26,23 @@ window.addEventListener("load",
                 }
             })
     })
+
+// RULES FOR AUDIO TAG
+window.addEventListener("scroll",
+    function () {
+        var mySound = document.getElementById("myAudio");
+        if (elFllVsbl(mySound.parentElement)) { //parent elementFullyVisible
+            if (!(mySound.currentTime > 0)) { //test needed for preventing stuttering
+                mySound.play();
+            }
+        } else {
+            mySound.pause();
+            mySound.currentTime = 0; // rewind sound
+        }
+    }
+)
+
+function elFllVsbl(el) {
+    return (el.getBoundingClientRect().top>0 &&
+           el.getBoundingClientRect().bottom<window.innerHeight)
+}
