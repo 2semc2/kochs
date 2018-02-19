@@ -44,7 +44,7 @@ header {
 
 /* RULES FOR VIDEO */
 
-video {
+.parallax-container video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -52,6 +52,15 @@ video {
     min-height: 100%;
     z-index: -99;
 }
+
+.parallax-container2 video {
+    width: 1280px;
+    height: 720px;
+    margin: 70px auto;
+    z-index: -99;
+    display: block;
+}
+
 
 /* RULES FOR WEBDOCTITLE */
 
@@ -209,7 +218,6 @@ p {
 	width: 100%;
 	text-align: left;
 	padding: 55px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left,
@@ -234,7 +242,9 @@ p {
 /* The company logo */
 
 .footer-right img {
-    width: 90%;
+    width: 80%;
+    position: relative;
+    left: 20%
 }
 
 .footer-distributed h3{
