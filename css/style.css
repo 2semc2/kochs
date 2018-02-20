@@ -165,6 +165,15 @@ header {
 }
 
 .parallax5 {
+    background-image: url(../images/last2.jpg);
+    height: 720px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax6 {
     background-image: url(../images/kochs5.jpg);
     height: 720px;
     background-attachment: fixed;
@@ -172,6 +181,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 /* RULES FOR VIDEO CONTENT */
 .videocontent {
