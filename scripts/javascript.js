@@ -1,3 +1,5 @@
+
+
 // RULES FOR PROGRESS INDICATOR
 window.onscroll = function () { // Der gives en funktion når man scroller
     myFunction()
@@ -6,7 +8,7 @@ window.onscroll = function () { // Der gives en funktion når man scroller
 function myFunction() { // Variabler bliver skrevet ind
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop; // en for scrolltop, hvor man kan finde dens vertikale position
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight; // en for scrollHeight, hvor man finder hele sidens højde
-    var scrolled = (winScroll / height) * 100;  // en hvor man udregner hvor på siden man er 
+    var scrolled = (winScroll / height) * 100; // en hvor man udregner hvor på siden man er 
     document.getElementById("myBar").style.width = scrolled + "%"; // til sidst har vi en javascript som skal style myBar med vores variabel og vise hvor langt fremme på siden man er via. en horisontal indikator
 }
 
