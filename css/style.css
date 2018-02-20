@@ -174,7 +174,10 @@ header {
 }
 
 /* RULES FOR VIDEO CONTENT */
-
+.videocontent {
+    background-image: url(../images/kochsvideobg.jpg);
+    background-size: cover;
+}
 
 .videocontent video {
     width: 1280px;
