@@ -42,6 +42,33 @@ header {
     height: 100%;
 }
 
+/* RULES FOR CHATBOXES */
+
+.chatbox {
+    background-color: white;
+    text-align: center;
+    padding: 3% 35%;
+}
+
+.chatbox p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* RULES FOR QUOTE BOXES */
+
+
+.quote p {
+    font-size: 30px;
+    color: #078598;
+    font-style: italic;
+}
+
+.quote span {
+    font-size: 14px;
+    color: #000;
+}
+
 /* RULES FOR VIDEO */
 
 .parallax-container video {
@@ -51,14 +78,6 @@ header {
     min-width: 100%;
     min-height: 100%;
     z-index: -99;
-}
-
-.parallax-container2 video {
-    width: 1280px;
-    height: 720px;
-    margin: 70px auto;
-    z-index: -99;
-    display: block;
 }
 
 /* RULES FOR WATERMARK */
@@ -79,15 +98,22 @@ header {
     text-align: center;
     position: absolute;
     z-index: 2;
-    background: #FFF;
+    background: #000000;
     border-radius: 5px;
     padding: 5px;
     opacity: 0.75;
 }
 
-.webdoctitle h1 {
+.webdoctitle h2 {
     font-size: 34px;
+    color: white;
     margin: auto;
+    opacity: 1;
+}
+
+.webdoctitle h3 {
+    color: white;
+    opacity: 1;
 }
 
 /* RULES FOR WEBDOCTITLE -> DIVIDER */
@@ -97,48 +123,14 @@ header {
     height: 2px;
     background: #333;
     margin: 10px auto;
-}
-
-/* RULES FOR CONTENT */
-
-p {
-    padding: 5px;
-    opacity: 0;
-}
-
-.content {
-    background: #cecece;
-    text-align: center;
-}
-
-.content h2 {
-    font-size: 34px;
-}
-
-/* RULES FOR CONTENT DIVS */
-
-.content div {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2%
-}
-
-/* RULES FOR PICTURE ROW */
-
-.gridPic {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-.gridPic img {
-    width: 100%;
+    color: white;
 }
 
 /* RULES FOR PARALLAX EFFECT + PICTURES */
 
 .parallax1 {
-    background-image: url(../images/1.jpg);
-    height: 350px;
+    background-image: url(../images/kochs1.jpg);
+    height: 520px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,8 +138,8 @@ p {
 }
 
 .parallax2 {
-    background-image: url(../images/3.jpg);
-    height: 350px;
+    background-image: url(../images/kochs2.jpg);
+    height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,26 +147,41 @@ p {
 }
 
 .parallax3 {
-    background-image: url(../images/2.jpg);
-    height: 350px;
+    background-image: url(../images/kochs3.jpg);
+    height: 720px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* RULES FOR PARALLAX CHATBOXES */
-
-.chatbox {
-    color: #777;
-    background-color: white;
-    text-align: center;
-    padding: 3% 30%;
+.parallax4 {
+    background-image: url(../images/kochs4.jpg);
+    height: 720px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.chatbox h2 {
-    position: relative;
-    left: 1%;
+.parallax5 {
+    background-image: url(../images/kochs5.jpg);
+    height: 720px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* RULES FOR VIDEO CONTENT */
+
+
+.videocontent video {
+    width: 1280px;
+    height: 720px;
+    margin: auto;
+    z-index: -99;
+    display: block;
 }
 
 /* RULES FOR ARROW SCROLL INDICATOR */
@@ -219,54 +226,39 @@ p {
     }
 }
 
-/* RULES FOR SCROLL TO TOP */
+/* RULES FOR P-TAG */
 
-#scrollbutton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-#scrollbutton:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+p {
+    padding: 5px;
+    opacity: 0;
 }
 
 /* RULES FOR FOOTER */
 
-.footer-distributed {
+footer {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
     padding: 55px 50px;
+    position: relative;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
     display: inline-block;
     vertical-align: top;
 }
 
 /* RULES FOR FOOTER (LEFT) */
 
-.footer-distributed .footer-left {
+footer .footer-left {
     width: 40%;
 }
 
-.footer-distributed .footer-left p {
+footer .footer-left p {
     position: relative;
     top: 50px;
     right: 6px;
@@ -281,24 +273,24 @@ p {
     left: 20%
 }
 
-.footer-distributed h3 {
+footer h3 {
     color: #ffffff;
     margin: 0;
 }
 
-.footer-distributed h3 span {
+footer h3 span {
     color: #5383d3;
 }
 
 /* RULES FOR FOOTER (LINKS) */
 
-.footer-distributed .footer-links {
+footer .footer-links {
     color: #ffffff;
     margin: 20px 0 12px;
     padding: 0;
 }
 
-.footer-distributed .footer-links a {
+footer .footer-links a {
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
@@ -307,13 +299,13 @@ p {
 
 /* RULES FOR FOOTER (RIGHT) */
 
-.footer-distributed .footer-right {
+footer .footer-right {
     position: relative;
     left: 40%;
     width: 20%;
 }
 
-.footer-distributed .footer-icons {
+footer .footer-icons {
     margin-top: 25px;
     text-align: right;
     position: relative;
@@ -321,7 +313,7 @@ p {
     left: 20px;
 }
 
-.footer-distributed .footer-icons a {
+footer .footer-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
