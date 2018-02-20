@@ -61,6 +61,14 @@ header {
     display: block;
 }
 
+/* RULES FOR WATERMARK */
+.watermark h1 {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 5px;
+    left: 1px;
+}
 
 /* RULES FOR WEBDOCTITLE */
 
