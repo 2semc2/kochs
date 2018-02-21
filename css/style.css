@@ -47,12 +47,13 @@ header {
 .chatbox {
     background-color: white;
     text-align: center;
-    padding: 3% 30%;
+    padding: 3% 26%;
 }
 
 .chatbox p {
     font-size: 16px;
     color: #000;
+    line-height: 30px;
 }
 
 /* RULES FOR QUOTE BOXES */
@@ -62,11 +63,13 @@ header {
     font-size: 30px;
     color: #078598;
     font-style: italic;
+    line-height: normal;
 }
 
 .quote span {
     font-size: 14px;
     color: #000;
+    line-height: normal;
 }
 
 /* RULES FOR VIDEO */
@@ -86,8 +89,8 @@ header {
     color: white;
     opacity: 0.5;
     position: absolute;
-    top: 5px;
-    left: 1px;
+    top: 20px;
+    left: 15px;
 }
 
 /* RULES FOR WEBDOCTITLE */
@@ -100,8 +103,8 @@ header {
     z-index: 2;
     background: #000000;
     border-radius: 5px;
-    padding: 20px;
-    opacity: 0.75;
+    padding: 30px;
+    opacity: 0.6;
 }
 
 .webdoctitle h2 {
@@ -187,6 +190,7 @@ header {
 /* RULES FOR VIDEO CONTENT */
 .videocontent {
     background-image: url(../images/kochsvideobg.jpg);
+    
     background-size: cover;
 }
 
