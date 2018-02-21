@@ -1,5 +1,3 @@
-
-
 // RULES FOR PROGRESS INDICATOR
 window.onscroll = function () { // Der gives en funktion når man scroller
     myFunction()
@@ -28,24 +26,3 @@ window.addEventListener("load", // Når siden loades
                 }
             })
     })
-
-/*
-// RULES FOR AUDIO TAG
-window.addEventListener("scroll",
-    function () {
-        var mySound = document.getElementById("myAudio");
-        if (elFllVsbl(mySound.parentElement)) { //parent elementFullyVisible
-            if (!(mySound.currentTime > 0)) { //test needed for preventing stuttering
-                mySound.play();
-            }
-        } else {
-            mySound.pause();
-            mySound.currentTime = 0; // rewind sound
-        }
-    }
-)
-
-function elFllVsbl(el) {
-    return (el.getBoundingClientRect().top>0 &&
-           el.getBoundingClientRect().bottom<window.innerHeight)
-} */
