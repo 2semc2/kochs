@@ -1,358 +1,57 @@
-/* GLOBAL RULES */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
+*{margin:0;padding:0;}
 html,
-body {
-    height: 100%;
+body{height:100%;}
+body{font-family:"Lato", "Helvetica", sans-serif;}
+header{position:fixed;top:0;left:0;z-index:1;width:100%;background-color:#f1f1f1;z-index:10;}
+.progress-container{width:100%;height:8px;background:#ccc;}
+.progress-bar{height:8px;background:#078598;width:0%;}
+.parallax-container{height:100%;}
+.chatbox{background-color:white;text-align:center;padding:3% 26%;}
+.chatbox p{font-size:16px;color:#000;line-height:30px;}
+.quote p{font-size:30px;color:#078598;font-style:italic;line-height:normal;}
+.quote span{font-size:14px;color:#000;line-height:normal;}
+.parallax-container video{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;z-index:-99;}
+.watermark h1{color:white;opacity:0.5;position:absolute;top:20px;left:15px;}
+.webdoctitle{right:60%;bottom:10%;text-align:center;position:absolute;z-index:2;background:#000000;border-radius:5px;padding:30px;opacity:0.6;}
+.webdoctitle h2{font-size:34px;color:#078598;margin:auto;opacity:1;}
+.webdoctitle h3{color:white;opacity:1;}
+.divider{width:65px;height:2px;background:#333;margin:10px auto;color:white;}
+.parallax1{background-image:url(../images/kochs1.jpg);height:520px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.parallax2{background-image:url(../images/kochs2.jpg);height:800px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.parallax3{background-image:url(../images/kochs3.jpg);height:720px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.parallax4{background-image:url(../images/kochs4.jpg);height:720px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.parallax5{background-image:url(../images/last2.jpg);height:720px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.parallax6{background-image:url(../images/kochs5.jpg);height:720px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.videocontent{background-image:url(../images/kochsvideobg.jpg);background-size:cover;}
+.videocontent video{width:1280px;height:720px;margin:auto;z-index:-99;display:block;}
+.arrow{position:absolute;right:5%;bottom:5%;}
+.arrow i{border:solid black;border-width:0 3px 3px 0;display:inline-block;padding:10px;}
+.down{transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+.bounce{-moz-animation:bounce 2s infinite;-webkit-animation:bounce 2s infinite;animation:bounce 2s infinite;}
+@keyframes bounce{0%,
+20%,
+50%,
+80%,
+100%{transform:translateY(0);}
+40%{transform:translateY(-20px);}
+60%{transform:translateY(-10px);}
 }
-
-body {
-    font-family: "Lato", "Helvetica", sans-serif;
-}
-
-/* RULES FOR PROGRESS INDICATOR */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
-    z-index: 10;
-}
-
-.progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-}
-
-.progress-bar {
-    height: 8px;
-    background: #078598;
-    width: 0%;
-}
-
-.parallax-container {
-    height: 100%;
-}
-
-/* RULES FOR CHATBOXES */
-
-.chatbox {
-    background-color: white;
-    text-align: center;
-    padding: 3% 26%;
-}
-
-.chatbox p {
-    font-size: 16px;
-    color: #000;
-    line-height: 30px;
-}
-
-/* RULES FOR QUOTE BOXES */
-
-.quote p {
-    font-size: 30px;
-    color: #078598;
-    font-style: italic;
-    line-height: normal;
-}
-
-.quote span {
-    font-size: 14px;
-    color: #000;
-    line-height: normal;
-}
-
-/* RULES FOR VIDEO */
-
-.parallax-container video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -99;
-}
-
-/* RULES FOR WATERMARK */
-
-.watermark h1 {
-    color: white;
-    opacity: 0.5;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-}
-
-/* RULES FOR WEBDOCTITLE */
-
-.webdoctitle {
-    right: 60%;
-    bottom: 10%;
-    text-align: center;
-    position: absolute;
-    z-index: 2;
-    background: #000000;
-    border-radius: 5px;
-    padding: 30px;
-    opacity: 0.6;
-}
-
-.webdoctitle h2 {
-    font-size: 34px;
-    color: #078598;
-    margin: auto;
-    opacity: 1;
-}
-
-.webdoctitle h3 {
-    color: white;
-    opacity: 1;
-}
-
-/* RULES FOR WEBDOCTITLE -> DIVIDER */
-
-.divider {
-    width: 65px;
-    height: 2px;
-    background: #333;
-    margin: 10px auto;
-    color: white;
-}
-
-/* RULES FOR PARALLAX EFFECT + PICTURES */
-
-.parallax1 {
-    background-image: url(../images/kochs1.jpg);
-    height: 520px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax2 {
-    background-image: url(../images/kochs2.jpg);
-    height: 800px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax3 {
-    background-image: url(../images/kochs3.jpg);
-    height: 720px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax4 {
-    background-image: url(../images/kochs4.jpg);
-    height: 720px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax5 {
-    background-image: url(../images/last2.jpg);
-    height: 720px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax6 {
-    background-image: url(../images/kochs5.jpg);
-    height: 720px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-/* RULES FOR VIDEO CONTENT */
-
-.videocontent {
-    background-image: url(../images/kochsvideobg.jpg);
-
-    background-size: cover;
-}
-
-.videocontent video {
-    width: 1280px;
-    height: 720px;
-    margin: auto;
-    z-index: -99;
-    display: block;
-}
-
-/* RULES FOR ARROW SCROLL INDICATOR */
-
-.arrow {
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-}
-
-.arrow i {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-/* RULES FOR P-TAG */
-
-p {
-    padding: 5px;
-    opacity: 0;
-}
-
-/* RULES FOR FOOTER */
-
-footer {
-    background-color: #292c2f;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    padding: 55px 50px;
-    position: relative;
-}
-
+p{padding:5px;opacity:0;}
+footer{background-color:#292c2f;box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);box-sizing:border-box;width:100%;text-align:left;padding:55px 50px;position:relative;}
 footer .footer-left,
 footer .footer-center,
-footer .footer-right {
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* RULES FOR FOOTER (LEFT) */
-
-footer .footer-left {
-    width: 40%;
-}
-
-footer .footer-left p {
-    position: relative;
-    top: 50px;
-    right: 6px;
-    color: white;
-}
-
-/* RULES FOR FOOTER (IMG) */
-
-.footer-right img {
-    width: 80%;
-    position: relative;
-    left: 20%
-}
-
-footer h3 {
-    color: #ffffff;
-    margin: 0;
-}
-
-footer h3 span {
-    color: #5383d3;
-}
-
-/* RULES FOR FOOTER (LINKS) */
-
-footer .footer-links {
-    color: #ffffff;
-    margin: 20px 0 12px;
-    padding: 0;
-}
-
-footer .footer-links a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-}
-
-/* RULES FOR FOOTER (RIGHT) */
-
-footer .footer-right {
-    position: relative;
-    left: 40%;
-    width: 20%;
-}
-
-footer .footer-icons {
-    margin-top: 25px;
-    text-align: right;
-    position: relative;
-    top: 40px;
-    left: 20px;
-}
-
-footer .footer-icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    color: #ffffff;
-    border-style: none;
-    text-align: center;
-}
-
-
-/* RULES FOR FADE IN TEXT EFFECT */
-
-p.fading {
-    animation: fadein 4s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+footer .footer-right{display:inline-block;vertical-align:top;}
+footer .footer-left{width:40%;}
+footer .footer-left p{position:relative;top:50px;right:6px;color:white;}
+.footer-right img{width:80%;position:relative;left:20%}
+footer h3{color:#ffffff;margin:0;}
+footer h3 span{color:#5383d3;}
+footer .footer-links{color:#ffffff;margin:20px 0 12px;padding:0;}
+footer .footer-links a{display:inline-block;line-height:1.8;text-decoration:none;color:inherit;}
+footer .footer-right{position:relative;left:40%;width:20%;}
+footer .footer-icons{margin-top:25px;text-align:right;position:relative;top:40px;left:20px;}
+footer .footer-icons a{display:inline-block;width:35px;height:35px;color:#ffffff;border-style:none;text-align:center;}
+p.fading{animation:fadein 4s;animation-fill-mode:forwards;}
+@keyframes fadein{0%{opacity:0;}
+100%{opacity:1;}
 }
