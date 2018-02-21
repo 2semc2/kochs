@@ -58,7 +58,6 @@ header {
 
 /* RULES FOR QUOTE BOXES */
 
-
 .quote p {
     font-size: 30px;
     color: #078598;
@@ -188,9 +187,10 @@ header {
 
 
 /* RULES FOR VIDEO CONTENT */
+
 .videocontent {
     background-image: url(../images/kochsvideobg.jpg);
-    
+
     background-size: cover;
 }
 
