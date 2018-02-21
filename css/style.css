@@ -47,7 +47,7 @@ header {
 .chatbox {
     background-color: white;
     text-align: center;
-    padding: 3% 35%;
+    padding: 3% 30%;
 }
 
 .chatbox p {
@@ -100,13 +100,13 @@ header {
     z-index: 2;
     background: #000000;
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
     opacity: 0.75;
 }
 
 .webdoctitle h2 {
     font-size: 34px;
-    color: white;
+    color: #078598;
     margin: auto;
     opacity: 1;
 }
